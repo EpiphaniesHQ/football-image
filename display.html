@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Outcome: Download Image</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/display.css">
+    <script src="scripts/display.js" defer></script>
+</head>
+<body>
+    <div id="capture-area">
+
+        <div id="match-list"></div>
+
+        <footer>
+
+            <div id="socials">
+
+                <div id="twitter" class="social-icon">
+                    <i class="fab fa-twitter"></i> @EpiphaniesHQ
+                </div>
+
+                <div id="youtube" class="social-icon">
+                    <i class="fab fa-youtube"></i> @EpiphaniesHQ
+                </div>
+
+            </div>
+
+             <img src="images/EpiphaniesHQBannerSnip.jpg" alt="Epiphanies Banner" id="banner">
+        
+        </footer>
+
+    </div>
+
+    <div id="controls">
+
+        <label for="match">Match:
+            <input type="text" id="match" name="match" placeholder="Sunderland vs Manchester United"> 
+        </label>
+
+        <label for="outcome-select">Outcome:</label>
+        <select name="outcome" id="outcome-select">
+
+            <optgroup label="Standard Outcomes">
+
+                <option value="None" placeholder="None" disabled selected>Choose an outcome</option>
+                <option value="Home Win">Home Win</option>
+                <option value="Home Win or Draw">Home Win or Draw</option>
+                <option value="Draw">Draw</option>
+                <option value="Away Win">Away Win</option>
+                <option value="Away Win or Draw">Away Win or Draw</option>
+
+            </optgroup>
+
+            <optgroup>
+
+                <option value="Home[2:0] Win">Home ahead by 2 & Win</option>
+                <option value="Home[3:0] Win">Home ahead by 3 & Win</option>
+                <option value="Away[0:2] Win">Away ahead by 2 & Win</option>
+                <option value="Away[0:3] Win">Away ahead by 3 & Win</option>
+
+            </optgroup>
+        </select>
+
+        <button id="btn-add" onClick="addMatch()">Add Match</button>
+        <button id="btn-download" onClick="downloadImage()">Download Image</button>
+
+    </div>
+
+    
+</body>
+</html>

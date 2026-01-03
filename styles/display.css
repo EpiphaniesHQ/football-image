@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+
+    --primary-bg: #0f172a;
+    --card-bg: #1e293b;
+    --accent-one: #38bdf8;
+    --acent-two: #ff0000;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --body-bg: #f1f5f9;
+    --main-font: 'Poppins', sans-serif;
+    --sub-font: 'Montserrat', sans-serif;
+    --border: #334155;
+    --control-bg: #e2e8f0;
+    --widths: 600px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#capture-area {
+    width: var(--widths);
+    background-color: var(--primary-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    color: #ccc;
+}
+
+#match-list {
+    padding: 25px;
+    min-height: 50px;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.social-icon {
+    font-family: var(--sub-font);
+    color: var(--text-dim);
+    font-size: 13px;
+    font-weight: 550;
+}
+
+#youtube i {
+    color: var(--acent-two);
+}
+
+#twitter i {
+    color: var(--accent-one);
+}
+
+.match-row {
+    background: var(--card-bg);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(56, 189, 248, 0.2);
+}
+
+#match { 
+    font-size: 16px; 
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top: 1px solid var(--border);
+}
+
+#controls {
+    margin-top: 30px;
+    background-color: var(--control-bg);
+    padding: 25px;
+    border-radius: 10px;
+    width: var(--widths);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+input, select, button { 
+    padding: 10px; 
+    margin: 8px 0; 
+    width: 100%; 
+    border-radius: 8px; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+
+#btn-add { 
+    background: #10b981; 
+    color: #000; 
+    font-weight: bold; 
+    border: none; 
+    cursor: pointer; 
+}
+
+#btn-download { 
+    background: #6366f1;
+    color: #000; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold; 
+    margin-top: 15px; 
+}
+
+.delete-btn { 
+    color: #ef4444; 
+    cursor: pointer; 
+    margin-left: 15px; 
+    font-weight: bold; 
+}
+
+.delete-btn:hover { 
+    text-decoration: underline; 
+}
+
+.outcome-tag { 
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent);
+    padding: 6px 12px;
+    border-radius: 6px;
+    /* font-weight: bold; */
+    font-size: 13px;
+    /* text-transform: uppercase; */
+}
+
